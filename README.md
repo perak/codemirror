@@ -27,6 +27,7 @@ Parameters:
 
 - `code` is code to show in editor
 
+- `reactiveVar` optional name of Session variable, which is a reactive source of code
 
 And provide helpers that returns CodeMirror options and content:
 
