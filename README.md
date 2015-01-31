@@ -237,5 +237,14 @@ json
 css
 ```
 
+Version history
+===============
+
+1.2.0
+-----
+
+- Fixed bug with `reactiveVar` 
+
+
 
 That's it.
