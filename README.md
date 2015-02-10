@@ -12,7 +12,7 @@ Put somewhere in your template:
 ```
 <template name="EditorPage">
 
-	{{> CodeMirror id="some-id" name="someName" options=editorOptions code=editorCode}}
+	{{> CodeMirror id="some-id" name="someName" options=editorOptions code=editorCode reactiveVar="varName"}}
 
 </template>
 ```
@@ -58,6 +58,17 @@ Template.EditorPage.events({
 		alert(code);
 	}
 
+});
+
+```
+
+Or, if you provided `reactiveVar` you can read session variable:
+
+```
+Template.EditorPage.helpers({
+	"getEditorText": function() {
+		return Session.get("varName"); // "varName" is variable name you provided to reactiveVar 
+	}
 });
 
 ```
@@ -239,6 +250,18 @@ css
 
 Version history
 ===============
+
+1.2.2
+-----
+
+- `reactiveVar` now gets and sets session variable to/from editor text
+
+
+1.2.1
+-----
+
+- Fixed minor bug
+
 
 1.2.0
 -----
