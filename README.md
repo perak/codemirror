@@ -251,6 +251,11 @@ css
 Version history
 ===============
 
+1.2.3
+-----
+
+- Added `/addon/mode/overlay.js` required by gfm mode. Thanks to <a href="https://github.com/keyanzhang" target="_blank">Keyan Zhang</a>.
+
 1.2.2
 -----
 
