@@ -40,6 +40,10 @@ Package.onUse(function (api) {
 	api.add_files('lib/codemirror/addon/lint/javascript-lint.js', "client");
 
 
+	// overlay: required by `gfm.js`
+	api.add_files('lib/codemirror/addon/mode/overlay.js', "client");
+	
+	
 	// modes
 	api.add_files('lib/codemirror/mode/apl/apl.js', "client");
 	api.add_files('lib/codemirror/mode/asterisk/asterisk.js', "client");
