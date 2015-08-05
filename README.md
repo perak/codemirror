@@ -251,6 +251,12 @@ css
 Version history
 ===============
 
+1.2.5
+-----
+
+- Included search & replace addon
+
+
 1.2.4
 -----
 

@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.2.4",
+	version: "1.2.5",
 	git: "https://github.com/perak/codemirror.git"
 });
 
@@ -40,7 +40,13 @@ Package.onUse(function (api) {
 	api.add_files('lib/codemirror/addon/lint/javascript-lint.js', "client");
 
 	// active line mode
-	api.add_files('lib/codemirror/addon/selection/active-line.js', "client");	
+	api.add_files('lib/codemirror/addon/selection/active-line.js', "client");
+
+	// search/replace
+	api.add_files('lib/codemirror/addon/search/search.js', "client");
+	api.add_files('lib/codemirror/addon/search/searchcursor.js', "client");
+	api.add_files('lib/codemirror/addon/dialog/dialog.js', "client");
+	api.add_files('lib/codemirror/addon/dialog/dialog.css', "client");
 
 	// overlay: required by `gfm.js`
 	api.add_files('lib/codemirror/addon/mode/overlay.js', "client");
