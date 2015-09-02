@@ -51,6 +51,9 @@ Package.onUse(function (api) {
 	// overlay: required by `gfm.js`
 	api.add_files('lib/codemirror/addon/mode/overlay.js', "client");
 	
+	// markdown list continuation; nice complement for gfm
+	api.add_files('lib/codemirror/addon/edit/continuelist.js', "client");
+	
 	// modes
 	api.add_files('lib/codemirror/mode/apl/apl.js', "client");
 	api.add_files('lib/codemirror/mode/asterisk/asterisk.js', "client");
