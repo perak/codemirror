@@ -14,7 +14,7 @@ minifiers@1.1.5
 minimongo@1.0.8
 observe-sequence@1.0.6
 ordered-dict@1.0.3
-perak:codemirror@1.2.4
+perak:codemirror@1.2.5
 random@1.0.3
 reactive-var@1.0.5
 spacebars-compiler@1.0.6

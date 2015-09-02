@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.2.5",
+	version: "1.2.6",
 	git: "https://github.com/perak/codemirror.git"
 });
 
