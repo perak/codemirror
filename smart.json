@@ -3,7 +3,7 @@
 	"description": "CodeMirror editor for Meteor >= 1.0",
 	"homepage": "https://github.com/perak/codemirror",
 	"author": "Petar Korponaic",
-	"version": "1.2.6",
+	"version": "1.2.7",
 	"git": "https://github.com/perak/codemirror.git",
 	"packages": {}
 }
