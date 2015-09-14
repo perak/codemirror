@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.2.6",
+	version: "1.2.7",
 	git: "https://github.com/perak/codemirror.git"
 });
 
@@ -25,7 +25,15 @@ Package.onUse(function (api) {
 	api.add_files('lib/component/component.html', "client");
 	api.add_files('lib/component/component.js', "client");
 
-
+	api.add_files('lib/codemirror/addon/fold/brace-fold.js', "client");
+	api.add_files('lib/codemirror/addon/fold/comment-fold.js', "client");
+	api.add_files('lib/codemirror/addon/fold/foldcode.js', "client");
+	api.add_files('lib/codemirror/addon/fold/foldgutter.css', "client");
+	api.add_files('lib/codemirror/addon/fold/foldgutter.js', "client");
+	api.add_files('lib/codemirror/addon/fold/indent-fold.js', "client");
+	api.add_files('lib/codemirror/addon/fold/markdown-fold.js', "client");
+	api.add_files('lib/codemirror/addon/fold/xml-fold.js', "client");
+	
 	// lints
 	api.add_files('lib/codemirror/addon/lint/jsonlint.js', "client");
 	api.add_files('lib/codemirror/addon/lint/jshint.js', "client");
