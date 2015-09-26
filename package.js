@@ -1,6 +1,6 @@
 Package.describe({
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.2.7",
+	version: "1.2.8",
 	git: "https://github.com/perak/codemirror.git"
 });
 
@@ -12,8 +12,15 @@ Package.onUse(function (api) {
 		api.versionsFrom('METEOR@0.9.0');
 	}
 
-	api.use("underscore");
+
+	// dependencies
+
 	api.use("templating");
+	api.use("underscore");
+
+	//    required by:  'lib/codemirror/addon/link/yaml-lint.js'
+	//    reference:    https://github.com/nodeca/js-yaml
+	api.use("pntbr:js-yaml-client@0.0.1", "client");
 
 	// code
 	api.add_files('lib/codemirror/lib/codemirror.css', "client");
@@ -33,11 +40,12 @@ Package.onUse(function (api) {
 	api.add_files('lib/codemirror/addon/fold/indent-fold.js', "client");
 	api.add_files('lib/codemirror/addon/fold/markdown-fold.js', "client");
 	api.add_files('lib/codemirror/addon/fold/xml-fold.js', "client");
-	
+
 	// lints
 	api.add_files('lib/codemirror/addon/lint/jsonlint.js', "client");
 	api.add_files('lib/codemirror/addon/lint/jshint.js', "client");
 	api.add_files('lib/codemirror/addon/lint/csslint.js', "client");
+	api.add_files('lib/codemirror/addon/lint/yaml-lint.js', "client");
 	api.export('jsonlint', "client");
 	api.export('JSHINT', "client");
 	api.export('CSSLint', "client");
@@ -58,10 +66,10 @@ Package.onUse(function (api) {
 
 	// overlay: required by `gfm.js`
 	api.add_files('lib/codemirror/addon/mode/overlay.js', "client");
-	
+
 	// markdown list continuation; nice complement for gfm
 	api.add_files('lib/codemirror/addon/edit/continuelist.js', "client");
-	
+
 	// modes
 	api.add_files('lib/codemirror/mode/apl/apl.js', "client");
 	api.add_files('lib/codemirror/mode/asterisk/asterisk.js', "client");
