@@ -251,6 +251,32 @@ css
 Version history
 ===============
 
+1.2.9
+-----
+
+Fixed an error that appears when there are multiple editors on the the same template, which results in removing all editors when destroying just one template instance.
+
+Thanks to <a href="https://github.com/Kurounin" target="_blank">Kurounin</a>
+
+
+1.2.8
+-----
+
+Bugfixes
+
+
+1.2.7
+-----
+
+Bugfixes
+
+
+1.2.6
+-----
+
+Bugfixes
+
+
 1.2.5
 -----
 
