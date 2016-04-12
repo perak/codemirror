@@ -1,7 +1,7 @@
 Package.describe({
 	name: "perak:codemirror",
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.2.9",
+	version: "1.3.0",
 	git: "https://github.com/perak/codemirror.git"
 });
 
@@ -47,9 +47,11 @@ Package.onUse(function (api) {
 	api.add_files('lib/codemirror/addon/lint/jshint.js', "client");
 	api.add_files('lib/codemirror/addon/lint/csslint.js', "client");
 	api.add_files('lib/codemirror/addon/lint/yaml-lint.js', "client");
+	api.add_files('lib/codemirror/addon/lint/html-lint.js', "client");
 	api.export('jsonlint', "client");
 	api.export('JSHINT', "client");
 	api.export('CSSLint', "client");
+	api.export('HTMLHint', "client");
 
 	api.add_files('lib/codemirror/addon/lint/lint.css', "client");
 	api.add_files('lib/codemirror/addon/lint/lint.js', "client");
