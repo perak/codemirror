@@ -1,7 +1,7 @@
 Package.describe({
 	name: "perak:codemirror",
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.3.0",
+	version: "1.3.1",
 	git: "https://github.com/perak/codemirror.git"
 });
 
@@ -200,4 +200,5 @@ Package.onUse(function (api) {
 	api.add_files('lib/codemirror/keymap/sublime.js', "client");
 	api.add_files('lib/codemirror/keymap/vim.js', "client");
 
+	api.export('CodeMirrors', "client");
 });

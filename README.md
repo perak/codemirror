@@ -251,6 +251,22 @@ css
 Version history
 ===============
 
+1.3.1
+-----
+
+Now all rendered editors can be accessed via global `CodeMirrors` variable:
+
+```javascript
+var editor = CodeMirrors["my_editor_id"];
+editor.refresh(); // or whatever
+```
+
+1.3.0
+-----
+
+Fixed some bugs
+
+
 1.2.9
 -----
 
