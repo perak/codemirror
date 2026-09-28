@@ -1,0 +1,71 @@
+/*
+  Theme: GitHub Dark for CodeMirror 5
+  Description: Mapped directly from the highlight.js github-dark theme
+*/
+
+/* Base background and text color */
+.cm-s-github-dark.CodeMirror {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+/* UI Elements: Gutters, Line Numbers, Cursor, and Selection */
+.cm-s-github-dark .CodeMirror-gutters {
+  background: #0d1117;
+  border-right: 1px solid #30363d;
+}
+
+.cm-s-github-dark .CodeMirror-linenumber {
+  color: #8b949e;
+}
+
+.cm-s-github-dark .CodeMirror-cursor {
+  border-left: 1px solid #c9d1d9;
+}
+
+.cm-s-github-dark .CodeMirror-selected,
+.cm-s-github-dark .CodeMirror-focused .CodeMirror-selected {
+  background: #2b323d; 
+}
+
+.cm-s-github-dark .CodeMirror-line::selection,
+.cm-s-github-dark .CodeMirror-line > span::selection,
+.cm-s-github-dark .CodeMirror-line > span > span::selection {
+  background: #2b323d;
+}
+
+/* Syntax Highlighting Mapping */
+.cm-s-github-dark .cm-keyword { color: #ff7b72; }
+.cm-s-github-dark .cm-atom { color: #79c0ff; } /* Booleans, nulls */
+.cm-s-github-dark .cm-number { color: #79c0ff; }
+.cm-s-github-dark .cm-def { color: #d2a8ff; } /* Functions, definitions */
+.cm-s-github-dark .cm-variable,
+.cm-s-github-dark .cm-variable-2 { color: #c9d1d9; } 
+.cm-s-github-dark .cm-variable-3 { color: #ffa657; }
+.cm-s-github-dark .cm-property { color: #79c0ff; }
+.cm-s-github-dark .cm-operator { color: #79c0ff; }
+.cm-s-github-dark .cm-comment { color: #8b949e; }
+.cm-s-github-dark .cm-string { color: #a5d6ff; }
+.cm-s-github-dark .cm-string-2 { color: #a5d6ff; } /* Regular expressions */
+.cm-s-github-dark .cm-meta { color: #8b949e; }
+.cm-s-github-dark .cm-qualifier { color: #79c0ff; } /* CSS classes */
+.cm-s-github-dark .cm-builtin { color: #ffa657; }
+.cm-s-github-dark .cm-bracket { color: #c9d1d9; }
+.cm-s-github-dark .cm-tag { color: #7ee787; } /* HTML/XML tags */
+.cm-s-github-dark .cm-attribute { color: #79c0ff; } /* HTML attributes */
+.cm-s-github-dark .cm-header { color: #1f6feb; font-weight: bold; }
+.cm-s-github-dark .cm-quote { color: #7ee787; }
+.cm-s-github-dark .cm-hr { color: #8b949e; }
+.cm-s-github-dark .cm-link { color: #79c0ff; text-decoration: underline; }
+
+/* Diffs */
+.cm-s-github-dark .cm-positive { color: #aff5b4; background-color: #033a16; }
+.cm-s-github-dark .cm-negative { color: #ffdcd7; background-color: #67060c; }
+
+/* Markdown formatting */
+.cm-s-github-dark .cm-strong { font-weight: bold; color: #c9d1d9; }
+.cm-s-github-dark .cm-em { font-style: italic; color: #c9d1d9; }
+
+/* Errors */
+.cm-s-github-dark .cm-error,
+.cm-s-github-dark .cm-invalidchar { color: #f85149; }
