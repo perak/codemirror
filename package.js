@@ -1,7 +1,7 @@
 Package.describe({
 	name: "perak:codemirror",
 	summary: "CodeMirror editor for Meteor >= 1.0",
-	version: "1.3.2",
+	version: "1.3.3",
 	git: "https://github.com/perak/codemirror.git"
 });
 
@@ -175,6 +175,7 @@ Package.onUse(function (api) {
 	api.add_files('lib/codemirror/theme/elegant.css', "client");
 	api.add_files('lib/codemirror/theme/erlang-dark.css', "client");
 	api.add_files('lib/codemirror/theme/github-dark.css', "client");
+	api.add_files('lib/codemirror/theme/github-light.css', "client");
 	api.add_files('lib/codemirror/theme/lesser-dark.css', "client");
 	api.add_files('lib/codemirror/theme/mbo.css', "client");
 	api.add_files('lib/codemirror/theme/mdn-like.css', "client");

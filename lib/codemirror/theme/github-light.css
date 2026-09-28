@@ -1,0 +1,71 @@
+/*
+  Theme: GitHub Light for CodeMirror 5
+  Description: Mapped directly from the highlight.js github theme
+*/
+
+/* Base background and text color */
+.cm-s-github-light.CodeMirror {
+  background: #ffffff;
+  color: #24292e;
+}
+
+/* UI Elements: Gutters, Line Numbers, Cursor, and Selection */
+.cm-s-github-light .CodeMirror-gutters {
+  background: #ffffff;
+  border-right: 1px solid #e1e4e8;
+}
+
+.cm-s-github-light .CodeMirror-linenumber {
+  color: #6a737d;
+}
+
+.cm-s-github-light .CodeMirror-cursor {
+  border-left: 1px solid #24292e;
+}
+
+.cm-s-github-light .CodeMirror-selected,
+.cm-s-github-light .CodeMirror-focused .CodeMirror-selected {
+  background: #b3d4fc; 
+}
+
+.cm-s-github-light .CodeMirror-line::selection,
+.cm-s-github-light .CodeMirror-line > span::selection,
+.cm-s-github-light .CodeMirror-line > span > span::selection {
+  background: #b3d4fc;
+}
+
+/* Syntax Highlighting Mapping */
+.cm-s-github-light .cm-keyword { color: #d73a49; }
+.cm-s-github-light .cm-atom { color: #005cc5; } /* Booleans, nulls */
+.cm-s-github-light .cm-number { color: #005cc5; }
+.cm-s-github-light .cm-def { color: #6f42c1; } /* Functions, definitions */
+.cm-s-github-light .cm-variable,
+.cm-s-github-light .cm-variable-2 { color: #24292e; } 
+.cm-s-github-light .cm-variable-3 { color: #e36209; }
+.cm-s-github-light .cm-property { color: #005cc5; }
+.cm-s-github-light .cm-operator { color: #005cc5; }
+.cm-s-github-light .cm-comment { color: #6a737d; }
+.cm-s-github-light .cm-string { color: #032f62; }
+.cm-s-github-light .cm-string-2 { color: #032f62; } /* Regular expressions */
+.cm-s-github-light .cm-meta { color: #6a737d; }
+.cm-s-github-light .cm-qualifier { color: #005cc5; } /* CSS classes */
+.cm-s-github-light .cm-builtin { color: #e36209; }
+.cm-s-github-light .cm-bracket { color: #24292e; }
+.cm-s-github-light .cm-tag { color: #22863a; } /* HTML/XML tags */
+.cm-s-github-light .cm-attribute { color: #005cc5; } /* HTML attributes */
+.cm-s-github-light .cm-header { color: #005cc5; font-weight: bold; }
+.cm-s-github-light .cm-quote { color: #22863a; }
+.cm-s-github-light .cm-hr { color: #6a737d; }
+.cm-s-github-light .cm-link { color: #005cc5; text-decoration: underline; }
+
+/* Diffs */
+.cm-s-github-light .cm-positive { color: #22863a; background-color: #f0fff4; }
+.cm-s-github-light .cm-negative { color: #b31d28; background-color: #ffeef0; }
+
+/* Markdown formatting */
+.cm-s-github-light .cm-strong { font-weight: bold; color: #24292e; }
+.cm-s-github-light .cm-em { font-style: italic; color: #24292e; }
+
+/* Errors */
+.cm-s-github-light .cm-error,
+.cm-s-github-light .cm-invalidchar { color: #cb2431; }
